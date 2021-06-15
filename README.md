@@ -38,11 +38,8 @@ stub_status 모듈이 추가된 미리 구성해놓은 Sample app을 실행한�
 docker run -p 8080:8080 ddiiwoong/nginx-hello-stub:0.1
 ```
 
-간단한 nginx 샘플앱으로 아래와 같이 Server address, name, Date, URI, Status를 보여준다.
+간단한 nginx 샘플앱으로 Server address, name, Date, URI, Status 등을 보여준다.
 
-[http://localhost:8080](http://localhost:8080)
-
-![demo](./nginx-sample.png)
 
 ### /stub_status Page
 
