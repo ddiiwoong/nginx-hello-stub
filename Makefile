@@ -1,4 +1,3 @@
-VERSION=0.1
 PREFIX=ddiiwoong/nginx-hello-stub
 TAG=$(VERSION)
 
