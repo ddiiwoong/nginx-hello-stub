@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ddiiwoong/nginx-hello-stub:0.5
+        image: ddiiwoong/nginx-hello-stub:1.0
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 
 ---
 
@@ -25,11 +25,13 @@ kind: Service
 metadata:
   name: nginx
   labels:
-    run: nginx
+    app: nginx
 spec:
   ports:
-  - port: 80
+  - port: 8080
     protocol: TCP
   selector:
-    run: nginx
+    app: nginx
   type: NodePort
+
+---
